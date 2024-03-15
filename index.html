@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak's Calculator</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="calculator">
+        <input type="text" name="myinput" placeholder="0" id="myinput">
+       <div class="firstline-btns">
+        <button onclick="myinput.value = Math.pow(parseFloat(myinput.value), 2)">x<sup>2</sup></button>
+        <button onclick="myinput.value = Math.sqrt(parseFloat(myinput.value))"><sup>2</sup>√x</button>
+        <button onclick="myinput.value /= 100">%</button>
+        <button onclick="myinput.value = ''">C</button>
+    </div>
+    
+    <div class="secondline-btns">
+        <button onclick="myinput.value += '7'">7</button>
+        <button onclick="myinput.value += '8'">8</button>
+        <button onclick="myinput.value += '9'">9</button>
+        <button onclick="myinput.value += '*'">x</button>
+    </div>
+    
+    <div class="thirdline-btns">
+        <button onclick="myinput.value += '4'">4</button>
+        <button onclick="myinput.value += '5'">5</button>
+        <button onclick="myinput.value += '6'">6</button>
+        <button onclick="myinput.value += '-'">-</button>
+       </div>
+       
+       <div class="fourthline-btns">
+        <button onclick="myinput.value += '1'">1</button>
+        <button onclick="myinput.value += '2'">2</button>
+        <button onclick="myinput.value += '3'">3</button>
+        <button onclick="myinput.value += '+'">+</button>
+       </div>
+       
+       <div class="fifthine-btns">
+        <button onclick="myinput.value += '0'">0</button>
+        <button onclick="myinput.value += '.'"><b>.</b></button>
+        <button onclick="myinput.value = eval(myinput.value)">=</button>
+        <button onclick="myinput.value += '/'"><b>÷</b></button>
+    </div>     
+    </div>
+</body>
+</html>
