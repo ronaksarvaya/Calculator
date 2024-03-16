@@ -11,37 +11,40 @@
 <body >
     <div class="calculator">
         <input type="text" name="myinput" placeholder="0" id="myinput">
-     <div class="dispgrid">
-    <button onclick="myinput.value = Math.pow(parseFloat(myinput.value), 2)">x<sup>2</sup></button>
-    <button onclick="myinput.value = Math.sqrt(parseFloat(myinput.value))"><sup>2</sup>√x</button>
-    <button onclick="myinput.value /= 100">%</button>
-    <button onclick="myinput.value = ''">C</button>
-
-    <button onclick="myinput.value += '7'">7</button>
-    <button onclick="myinput.value += '8'">8</button>
-    <button onclick="myinput.value += '9'">9</button>
-    <button onclick="myinput.value += '*'">x</button>
-
+       <div class="firstline-btns">
+        <button onclick="myinput.value = Math.pow(parseFloat(myinput.value), 2)">x<sup>2</sup></button>
+        <button onclick="myinput.value = Math.sqrt(parseFloat(myinput.value))"><sup>2</sup>√x</button>
+        <button onclick="myinput.value /= 100">%</button>
+        <button onclick="myinput.value = ''">C</button>
+    </div>
+    
+    <div class="secondline-btns">
+        <button onclick="myinput.value += '7'">7</button>
+        <button onclick="myinput.value += '8'">8</button>
+        <button onclick="myinput.value += '9'">9</button>
+        <button onclick="myinput.value += '*'">x</button>
+    </div>
+    
+    <div class="thirdline-btns">
         <button onclick="myinput.value += '4'">4</button>
         <button onclick="myinput.value += '5'">5</button>
         <button onclick="myinput.value += '6'">6</button>
         <button onclick="myinput.value += '-'">-</button>
-        
+       </div>
        
-        
+       <div class="fourthline-btns">
         <button onclick="myinput.value += '1'">1</button>
         <button onclick="myinput.value += '2'">2</button>
         <button onclick="myinput.value += '3'">3</button>
         <button onclick="myinput.value += '+'">+</button>
-        
-        
-        
+       </div>
+       
+       <div class="fifthine-btns">
         <button onclick="myinput.value += '0'">0</button>
         <button onclick="myinput.value += '.'"><b>.</b></button>
         <button onclick="myinput.value = eval(myinput.value)">=</button>
         <button onclick="myinput.value += '/'"><b>÷</b></button>
-    </div>
-     
+    </div>     
     </div>
 </body>
 </html>
